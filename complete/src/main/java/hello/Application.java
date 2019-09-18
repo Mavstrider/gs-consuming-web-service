@@ -20,11 +20,14 @@ public class Application {
 		return args -> {
 			String country = "Spain";
 
+
 			if (args.length > 0) {
 				country = args[0];
 			}
 			GetCountryResponse response = quoteClient.getCountry(country);
 			System.err.println(response.getCountry().getCurrency());
+			System.err.println(response.getCountry().getCapital());
+			System.err.println(response.getCountry().getPopulation());
 		};
 	}
 
