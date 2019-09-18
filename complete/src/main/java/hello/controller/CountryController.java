@@ -34,7 +34,7 @@ public class CountryController {
 	@RequestMapping(value = "/existsCountry/{country}", method = RequestMethod.GET)
 	public ExistsCountryResponse existsCountry(@PathVariable String country) {
 		return countryClient.existsCountry(country);
-
+//Get @PathVariable e POST @RequestBody
 
 	}
 
